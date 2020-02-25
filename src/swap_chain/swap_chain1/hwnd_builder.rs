@@ -122,7 +122,7 @@ impl<'a> SwapChainHwndBuilder<'a> {
 
     #[inline]
     /// Default is Unspecified
-    pub fn with_with_alpha_mode(mut self, mode: AlphaMode) -> Self {
+    pub fn with_alpha_mode(mut self, mode: AlphaMode) -> Self {
         self.desc.alpha_mode = mode.into();
         self
     }
